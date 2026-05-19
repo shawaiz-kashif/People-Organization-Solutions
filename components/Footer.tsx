@@ -6,7 +6,7 @@ export default function Footer() {
       <Image
         src="https://peopleorgsolutions.com/wp-content/uploads/2026/01/SiteLogo-PO-190x121.png"
         alt="People Org Solutions"
-        width={150}
+        width={200}
         height={96}
       />
       <p>123 Fifth Avenue, NY 10160, New York, USA</p>

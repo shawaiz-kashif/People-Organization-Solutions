@@ -27,10 +27,10 @@ export default function Header() {
       <header className="site-header" aria-label="Primary navigation">
         <Link className="brand" href="/" onClick={closeMenu}>
           <Image
-            src="https://peopleorgsolutions.com/wp-content/uploads/2026/01/SiteLogo-PO-190x121.png"
+            src="/images/POS-Logo.png"
             alt="People Org Solutions"
-            width={190}
-            height={121}
+            width={360}
+            height={88}
             priority
           />
         </Link>
@@ -81,4 +81,3 @@ export default function Header() {
     </>
   );
 }
-

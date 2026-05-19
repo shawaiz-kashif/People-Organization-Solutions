@@ -1,4 +1,4 @@
-:root {
+﻿:root {
   --navy: #0f1729;
   --navy-deep: #001d39;
   --primary: #b8844a;
@@ -121,12 +121,12 @@ main {
   position: fixed;
   z-index: 20;
   inset: 0 0 auto;
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
   align-items: center;
-  justify-content: space-between;
   gap: 24px;
   min-height: 88px;
-  padding: 10px clamp(20px, 5vw, 72px);
+  padding: 10px clamp(12px, 3vw, 32px);
   color: white;
   background: rgba(0, 29, 57, 0.72);
   border-bottom: 1px solid rgba(255, 255, 255, 0.16);
@@ -137,9 +137,20 @@ main {
 
 .brand {
   display: inline-flex;
-  width: 150px;
+  align-items: center;
+  width: 340px;
+  height: 88px;
   filter: brightness(0) invert(1);
   transition: transform 0.25s ease;
+}
+
+.brand img {
+  width: auto;
+  height: 180%;
+  max-width: 180%;
+  position: relative;
+  top: 98%;
+  transform: translateY(-50%);
 }
 
 .brand:hover {
@@ -149,11 +160,13 @@ main {
 nav {
   display: flex;
   align-items: center;
+  justify-self: center;
   gap: clamp(18px, 3vw, 36px);
   font-family: var(--font-heading), Arial, sans-serif;
   font-size: 0.9rem;
   font-weight: 800;
   text-transform: uppercase;
+  margin-right: 150px  ;
 }
 
 nav a {
